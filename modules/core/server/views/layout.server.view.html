@@ -27,15 +27,15 @@
   <meta name="twitter:description" content="{{description}}">
   <meta name="twitter:url" content="{{url}}">
   <meta name="twitter:image" content="{{logo}}">
-
+  <noscript style="background: #000000; display: block !important;">Message here</noscript>
   <!-- Fav Icon -->
   <link href="{{favicon}}" rel="shortcut icon" type="image/x-icon">
-
   <!-- Application CSS Files -->
   {% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
 </head>
 
 <body class="ng-cloak">
+  <noscript style="background: #000000; display: block !important;">Message here</noscript>
   <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
   <section class="content">
     <section class="container">
@@ -53,11 +53,12 @@
 
   <!--Application JavaScript Files-->
   {% for jsFile in jsFiles %}<script type="text/javascript" src="{{jsFile}}"></script>{% endfor %}
-
+  <noscript style="background: #000000; display: block !important;">Message here</noscript>
   {% if livereload %}
   <!--Livereload script rendered -->
   <script type="text/javascript" src="{{host}}:35729/livereload.js"></script>
   {% endif %}
+  <noscript style="background: #000000; display: block !important;">Message here</noscript>
 </body>
-
 </html>
+<noscript style="background: #000000; display: block !important;">Message here</noscript>
